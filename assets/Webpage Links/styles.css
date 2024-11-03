@@ -1,9 +1,16 @@
+/*body styling*/
+.body-style {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* Main Page */
 /* Navbar styling */
-body {
-    font-family: Arial, sans-serif;
-}
-
 nav {
     background-color: #333;
     padding: 10px;
@@ -52,3 +59,32 @@ nav ul li a:hover {
 .social-media-item img {
     width: 24px;
     height: 24px;
+}
+
+/* About Us Page */
+.about-us-sizing {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.about-us-header {
+    text-align: center;
+    font-size: 2em;
+    color: #444;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.about-us-text {
+    margin-bottom: 16px;
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
