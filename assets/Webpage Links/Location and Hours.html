@@ -4,51 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Location and Hours</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            padding: 20px;
-        }
-
-        h1, h2 {
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-            color: #333;
-        }
-
-        .day {
-            color: #505355;
-            font-weight: bold;
-        }
-
-        .hours {
-            color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="body-style">
     <!-- Page Header -->
     <header>
-        <img src="/assets/images/pexels-edwardeyer-1247755.jpg" alt="Service" height="80%" width="100%">
+        <img src="/assets/images/pexels-edwardeyer-1247755.jpg" 
+        alt="Service" class="header-image">
     </header>
 
     <!-- Main Content -->
     <main>
         <!-- Location Section -->
-        <section>
+        <section class="menu-header-alignment">
             <h1>Location</h1>
             <address>
                 511 Tristin Isle Park<br>
@@ -57,15 +25,21 @@
         </section>
 
         <!-- Hours Section -->
-        <section>
-            <h2>Hours of Operation</h2>
-            <ul>
+        <section class="hours-header-alignment">
+            <h2>Hours of Operation  </h2>
+            <ul class="unordered-list Listed-style" >
                 <li><span class="day">Monday:</span> <span class="hours">10am - 7pm</span></li>
+                <br>
                 <li><span class="day">Tuesday:</span> <span class="hours">10am - 7pm</span></li>
+                <br>
                 <li><span class="day">Wednesday:</span> <span class="hours">10am - 7pm</span></li>
+                <br>
                 <li><span class="day">Thursday:</span> <span class="hours">10am - 10pm</span></li>
+                <br>
                 <li><span class="day">Friday:</span> <span class="hours">10am - 9pm</span></li>
+                <br>
                 <li><span class="day">Saturday:</span> <span class="hours">12pm - 11pm</span></li>
+                <br>
                 <li><span class="day">Sunday:</span> <span class="hours">12pm - 11pm</span></li>
             </ul>
         </section>
