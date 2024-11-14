@@ -278,7 +278,26 @@
         color: #333;
 }
 
+    .Listed-style li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc; /* Add a subtle border */
+    }
+
+    .Listed-style li + li {
+        margin-top: 10px;
+    }
+
     .hours-header-alignment {
         text-align: center;
         color: #333;
+}
+
+.menu-header-alignment h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hours-header-alignment h2 {
+    text-align: center;
+    margin-top: 20px;
 }
