@@ -11,7 +11,7 @@
 }
 
 /* Heading */
-    h1 h2 h3 {
+    h1, h2, h3 {
         font-family: Verdana, Geneva, Tahoma, sans-serif ;
         margin: auto;
         color: #555;
@@ -22,10 +22,19 @@
         width: 100%;
         height: auto;
         display: block;
+        object-fit: cover;
 }
 
 /* Main Page */
     /* Navbar styling */
+    @media (max-width: 600px) {
+        nav ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+}
+
     nav {
         background-color: #333;
     padding: 10px;
@@ -92,12 +101,6 @@
 
 }
 
-    /* Hover Effects */
-    .title:hover {
-        transform: scale(1.05); /* Slightly scale up the title on hover */
-        color: #e6ac00; /* Change color on hover */
-        background-color: rgb(173, 171, 171); /* Solid white background on hover */
-}
 
 /* About Us Page */
     .about-us-sizing {
@@ -125,43 +128,130 @@
         line-height: 1.8;
         color: #555;
 }
+    .about-us-image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 
 /* Menu Page */
-    .menu-section {
-        margin-bottom: 30px;
-        width: 800px;
+
+   
+    .image-gallery-container {
+        display: flex; 
+        justify-content: center; 
+        flex-wrap: wrap;
+        gap: 10px; 
+        margin-top: 20px;
 }
+
+    .image-gallery-container img {
+        width: 300px; 
+        height: 250px; 
+        object-fit: cover; 
+        border-radius: 8px; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+@media (max-width: 1024px) {
+    .image-gallery-container img {
+        width: 150px;
+        height: 120px;
+    }
+}
+
+/* Menu Selection */
+.menu-section {
+    margin-bottom: 30px;
+    width: 800px;
+    margin: auto;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.menu-item h3 {
+    color: #20201f;
+    margin-bottom: 5px;
+}
+
+.menu-item p {
+    margin: 5px 0;
+}
+
+.note {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+}
+
+.menu-header-alignment {
+    text-align: center;
+    color: #333;
+}
+
+.menu-quarterly {
+    color: #aa9072;
+}
+
+/* Responsive adjustments for tablets (768px and up) */
+@media (max-width: 768px) {
+    .menu-section {
+        width: 90%; /* Make the width flexible */
+        margin: 20px auto; /* Center with some margin */
+    }
+    
+    .menu-item {
+        padding: 12px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Responsive adjustments for mobile devices (600px and down) */
+@media (max-width: 600px) {
+    .menu-section {
+        width: 100%; /* Full width on smaller screens */
+        padding: 0 10px; /* Add some horizontal padding */
+    }
 
     .menu-item {
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 15px;
-        margin: 10px 0;
-}
+        padding: 10px;
+        margin: 8px 0;
+    }
 
-    .menu-item h3 {
-        color: #20201f;
-        margin-bottom: 5px;
-}
+    h3 {
+        font-size: 1.1em;
+    }
 
-    .menu-item p {
-        margin: 5px 0;
-}
-
-    .note {
-        margin-top: 20px;
-        font-style: italic;
-        color: #555;
-}
+    p {
+        font-size: 0.95em;
+    }
 
     .menu-header-alignment {
-        text-align: center;
-        color: #333;
-}
+        padding: 0 5px;
+        font-size: 1.3em; /* Scale down text size */
+    }
 
     .menu-quarterly {
-        color: #aa9072;
+        font-size: 1.2em; /* Scale down section heading */
+    }
+
+    .note {
+        font-size: 0.9em;
+    }
 }
 
 /* Location and Hours page */
